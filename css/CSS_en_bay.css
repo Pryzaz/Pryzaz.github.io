@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: rgb(173, 173, 173);
+    font-family:'Open Sans';
+}
+
+#shapka img {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    object-position: 100% 100%;
+    object-fit: contain;
+    
+    
+}
+
+#image {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    background-color:rgb(255, 255, 255); 
+    width: 100%;
+    position: relative;   
+    
+   
+}
+#image h1 {
+    font-size: 70px;
+    position: absolute;
+    left:28%;
+    bottom: 30%;
+    width: 100%;
+    text-shadow:
+                1px 1px rgb(240, 241, 141),
+                -1px -1px rgb(240, 241, 141),
+                -1px 1px rgb(240, 241, 141),
+                1px -1px rgb(240, 241, 141);
+}
+
+#center {
+    margin: 0 auto;
+    float: center;
+    width: 90%;
+    height: 80%;
+    background-color:rgb(255, 255, 255);
+    
+}
+
