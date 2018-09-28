@@ -5,27 +5,27 @@ body {
     font-family:'Open Sans';
 }
 
-#shapka img {
+.shapka img {
     position: relative;
     max-width: 100%;
     margin: 0 auto;
     object-position: 100% 100%;
-    object-fit: contain;
+    
     
     
 }
 
-#image {
+.image {
     margin: 0;
     padding: 0;
     margin-bottom: 10px;
     background-color:rgb(255, 255, 255); 
     width: 100%;
-    position: relative;   
+    position: absolute;   
     
    
 }
-#image h1 {
+.image h1 {
     font-size: 70px;
     position: absolute;
     left:28%;
@@ -38,7 +38,7 @@ body {
                 1px -1px rgb(240, 241, 141);
 }
 
-#center {
+.center {
     margin: 0 auto;
     float: center;
     width: 90%;

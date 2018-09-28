@@ -1,37 +1,30 @@
 body {
-    
     margin: 0;
     overflow-x: hidden;
-    background-color: rgb(173, 173, 173);
+    background-color: rgb(173, 173, 173, 0);
     font-family:'Open Sans';
+    font-size: 20px;
+   
 }
-#shapka{
-    margin: 0 auto;
-    
-}
-
-#shapka img {
-    max-width: 100%;
-    
+.shapka img {
+    vertical-align: bottom;
+    width: 100%;
     margin: 0 auto;
     object-position: 100% 100%;
-    
 }
-
-#image {
-    margin: 0;
-    padding: 0;
+.shapka{
+    display: inline-block;
+    margin: 0 auto;
     margin-bottom: 10px;
-    background-color:rgb(255, 255, 255); 
     width: 100%;
     position: relative;   
-    box-shadow: 3px 3px 5px rgb(94, 94, 94);
+    box-shadow: 0px 3px 5px rgb(94, 94, 94);
 }
-#image h1 {
+.txt_sap{ 
+    text-align: center;
     font-size: 70px;
     position: absolute;
-    left:35%;
-    bottom: 30%;
+   bottom: 20%;
     width: 100%;
     text-shadow:
                 1px 1px rgb(240, 241, 141),
@@ -39,46 +32,43 @@ body {
                 -1px 1px rgb(240, 241, 141),
                 1px -1px rgb(240, 241, 141);
 }
-
-#center {
+.center {
+    
     margin: 0 auto;
+    margin-top: 20px;
     float: center;
     width: 90%;
-    height: 80%;
-    background-color:rgb(255, 255, 255);
-    box-shadow: 5px 5px 10px rgb(94, 94, 94); 
+    background-color: rgb(255, 255, 255);
 }
-#bloks{
-    white-space: nowrap;
+.footer{
+    margin-top: 20px; 
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 50px;
 }
-#bloks div{
-    width:400px;
+.bloks div{
+    width:30%;
     display: inline-block;
-    margin-left: 20px;
-     
-    
+    margin: 1%;
 }
-#enbay{
+.poster{
     display: inline-block;
     position: relative;
-    margin-top: 10px;
-    margin-left: 15px;
-    width: 400px;
     transition: .2s ease-out;
     box-shadow: 2px 2px 10px rgb(0, 0, 0); 
-    
+    padding: 0%;
 }
-#enbay:hover{  
+.poster:hover{  
     transform: scale(1.2);
     z-index: 1;
 }
-#enbay img {
+.poster img {
     float: center;
     width: 100%;
-    position: relative;  
+    position: relative;
+    vertical-align: bottom;  
 }
-#en_h{
-    transition: .2s ease-out;
+.nadpis{
     color: black;
     font-size: 50px;
     left:20%;
@@ -95,31 +85,57 @@ a {
 a :visited{
     color: black;
 }
-#sasl{
-    display: inline-block;
-    position: relative;
-    margin-top: 10px;
-    transition: .2s ease-out;
-    width: 400px;
-    box-shadow: 2px 2px 10px rgb(0, 0, 0); 
+.text_photo {
+    width: 30%;
+    float: left;
+    margin: 5px;
+    border: 1px solid;
 }
-#sasl img {
-    float: center;
+.text_photo_sas{
     width: 100%;
-    position: relative;  
 }
-#sas_h{
-    transition: .2s ease-out;
-    color: black;
-    font-size: 50px;
-    left:20%;
-    top: 20%;
-    position: absolute;
-    text-shadow: 1px 1px rgb(255, 255, 255),
-                -1px -1px rgb(255, 255, 255),
-                -1px 1px rgb(255, 255, 255),
-                 1px -1px rgb(255, 255, 255);
+.kolaz{
+    display: center;
+    width: 50%;
+    height: 50%;
 }
-#sasl:hover{
-    transform: scale(1.2);
+.kolaz img{
+    
+    text-align: center;
+    max-width: 47%;
+    margin: 5px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
 }
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+.lightbox img {
+	/** Pad the lightbox image */
+	max-width: 80%;
+	max-height: 90%;
+	margin-top: 2%;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+}
+
+
+  
+
+
